@@ -142,7 +142,7 @@
 
 
     <!-- Hero Start -->
-    <!-- <div class="container-fluid hero py-5 bg-primary mb-5">
+    <div class="container-fluid hero py-5 bg-primary mb-5">
         <div class="container py-5">
             <div class="row g-5 align-items-center">
 
@@ -176,7 +176,7 @@
 
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- Hero End -->
     <style>
         .image-grid {
@@ -234,25 +234,25 @@
 
     </script>
 
-        <div class="hero mb-5 position-relative">
+        <!-- <div class="hero mb-5 position-relative">
             <div class="">
                 <div class="row g-5 align-items-center">
                     <div class="col-12">
-                        <img src="img/cover_image.jpg" class="img-fluid w-100" alt="Image" style="border-radius: 20px;">
+                        <img src="img/cover_image.jpg" class="img-fluid w-100" alt="Image" style="object-fit: cover;">
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5 wow fadeIn position-absolute top-50 start-50 translate-middle" data-wow-delay="0.1s">
+            <div class="wow fadeIn position-absolute top-50 start-50 translate-middle" data-wow-delay="0.1s">
                 <div class="d-flex flex-column justify-content-center text-center">
                     <h1 class="display-4 text-white mb-4">Welcome to Bharti Public School</h1>
                     <p class="text-white mb-4 fs-5">SCIENCE | COMMERCE | ARTS | AGRICULTURE (PLAY GROUP TO XII)</p>
-                    <span class="display-4 mb-4">Admissions Open for 2026-2027</span>
+                    <span class="display-4 text-blue mb-4">Admissions Open for 2026-2027</span>
                 </div>
                 <div class="d-flex justify-content-center text-center">
                     <a href="#" class="btn btn-light px-5 py-3 btn-border-radius">ENROLL NOW</a>
                 </div>
             </div>
-        </div>
+        </div> -->
     
 
 
@@ -598,6 +598,107 @@
     </div>
     <!-- Events End-->
 
+    <!-- Blog Start-->
+     <style>
+        .image-gallery{
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+            gap:20px;
+        }
+
+        .gallery-card{
+            position:relative;
+            overflow:hidden;
+            border-radius:10px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .gallery-card img{
+            width:100%;
+            height:320px;
+            object-fit:cover;
+            transition:0.5s;
+        }
+
+        .gallery-card:hover img{
+            transform:scale(1.1);
+        }
+
+        .overlay{
+            position:absolute;
+            bottom:0;
+            width:100%;
+            background:rgba(0,0,0,0.6);
+            color:white;
+            text-align:center;
+            padding:10px;
+            font-size:18px;
+        }
+     </style>
+    <div class="container-fluid blog py-5">
+        <div class="container py-5">
+
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Our School Toppers</h2>
+                <p>Students who achieved excellent results</p>
+            </div>
+
+            <div class="image-gallery">
+
+                <div class="gallery-card">
+                    <img src="img/toper_img/toper (1).jpg">
+                    <div class="overlay">Topper 2025</div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="img/toper_img/toper (2).jpg">
+                    <div class="overlay">Topper 2025</div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="img/toper_img/toper (3).jpg">
+                    <div class="overlay">Topper 2025</div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="img/toper_img/toper (4).jpg">
+                    <div class="overlay">Topper 2025</div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="img/toper_img/toper (5).jpg">
+                    <div class="overlay">Topper 2025</div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="img/toper_img/toper (3).jpg">
+                    <div class="overlay">Topper 2025</div>
+                </div>
+
+                                <div class="gallery-card">
+                    <img src="img/toper_img/toper (6).jpg">
+                    <div class="overlay">Topper 2025</div>
+                </div>
+                                <div class="gallery-card">
+                    <img src="img/toper_img/toper (7).jpg">
+                    <div class="overlay">Topper 2025</div>
+                </div>
+                                <div class="gallery-card">
+                    <img src="img/toper_img/toper (8).jpg">
+                    <div class="overlay">Topper 2025</div>
+                </div>                
+                <div class="gallery-card">
+                    <img src="img/toper_img/toper (6).jpg">
+                    <div class="overlay">Topper 2025</div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Blog End-->
+
 
     <!-- Blog Start-->
     <div class="container-fluid blog py-5">
@@ -606,7 +707,7 @@
                 <div class="wow fadeIn" data-wow-delay="0.1s">
                     <div class=" row blog-item rounded-bottom bg-light py-5">
                         <div class="col-md-3 overflow-hidden position-relative img-border-radius">
-                            <img src="img/lokesh.png" class="img-fluid w-100" alt="Image">
+                            <img src="img/lokesh.png" class="img-fluid w-100 h-80" alt="Image">
                         </div>
 
                         <div class="col-md-9 blog-content d-flex align-items-center px-4 py-3">
@@ -618,87 +719,16 @@
 
                                     <br><br> <span>At Bharti Public School (English Medium)</span> we are committed to providing every student with quality education and a lifetime learning experience. We go beyond the boundaries of books and encourage students to explore new ideas and opportunities. Our aim is to inspire and motivate young minds to think creatively, ask questions, and imagine new possibilities in a friendly and supportive atmosphere. We strive to make learning a joyful and meaningful experience so that every child looks forward to a bright and successful future.
 
-                                   <br> <br>Bharti Public School (English Medium) is managed by a dedicated management team with experience and commitment in the field of education. Our goal is to create an environment where students can grow academically, socially, and morally.
 
                                     <br><br>We warmly invite you to become a part of the learning and growing journey of Bharti Public School and provide your child with a bright future.</p>
 
-                                <span class="display-5">Mr. Lokesh Kumar</span> <br>
+                                <span class="display-6">Mr. Name Kumar</span> <br>
                                 <span class="text-primary">Chairman, Bharti Public School</span>
                             </div>
                         </div>
 
                     </div>
                 </div>
-                <!-- <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="blog-item rounded-bottom">
-                        <div class="blog-img overflow-hidden position-relative img-border-radius">
-                            <img src="img/blog-2.jpg" class="img-fluid w-100" alt="Image">
-                        </div>
-                        <div
-                            class="d-flex justify-content-between px-4 py-3 bg-light border-bottom border-primary blog-date-comments">
-                            <small class="text-dark"><i class="fas fa-calendar me-1 text-dark"></i> 29 Nov 2023</small>
-                            <small class="text-dark"><i class="fas fa-comment-alt me-1 text-dark"></i> Comments
-                                (15)</small>
-                        </div>
-                        <div class="blog-content d-flex align-items-center px-4 py-3 bg-light">
-                            <div class="overflow-hidden rounded-circle rounded-top border border-primary">
-                                <img src="img/program-teacher.jpg" class="img-fluid rounded-circle p-2 rounded-top"
-                                    alt=""
-                                    style="width: 70px; height: 70px; border-style: dotted; border-color: var(--bs-primary) !important;">
-                            </div>
-                            <div class="ms-3">
-                                <h6 class="text-primary">Mary Mordern</h6>
-                                <p class="text-muted">Baby Care</p>
-                            </div>
-                        </div>
-                        <div class="px-4 pb-4 bg-light rounded-bottom">
-                            <div class="blog-text-inner">
-                                <a href="#" class="h4">Play outdoor sports with your child</a>
-                                <p class="mt-3 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed
-                                    purus</p>
-                            </div>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-primary text-white px-4 py-2 mb-3 btn-border-radius">View
-                                    Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="blog-item rounded-bottom">
-                        <div class="blog-img overflow-hidden position-relative img-border-radius">
-                            <img src="img/blog-3.jpg" class="img-fluid w-100" alt="Image">
-                        </div>
-                        <div
-                            class="d-flex justify-content-between px-4 py-3 bg-light border-bottom border-primary blog-date-comments">
-                            <small class="text-dark"><i class="fas fa-calendar me-1 text-dark"></i> 29 Nov 2023</small>
-                            <small class="text-dark"><i class="fas fa-comment-alt me-1 text-dark"></i> Comments
-                                (15)</small>
-                        </div>
-                        <div class="blog-content d-flex align-items-center px-4 py-3 bg-light">
-                            <div class="overflow-hidden rounded-circle rounded-top border border-primary">
-                                <img src="img/program-teacher.jpg" class="img-fluid rounded-circle p-2 rounded-top"
-                                    alt=""
-                                    style="width: 70px; height: 70px; border-style: dotted; border-color: var(--bs-primary) !important;">
-                            </div>
-                            <div class="ms-3">
-                                <h6 class="text-primary">Mary Mordern</h6>
-                                <p class="text-muted">Baby Care</p>
-                            </div>
-                        </div>
-                        <div class="px-4 pb-4 bg-light rounded-bottom">
-                            <div class="blog-text-inner">
-                                <a href="#" class="h4">How to make time for your kids?</a>
-                                <p class="mt-3 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed
-                                    purus</p>
-                            </div>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-primary text-white px-4 py-2 mb-3 btn-border-radius">View
-                                    Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
@@ -1010,7 +1040,7 @@
             </div>
             
         </div>
-                        <div class="text-center text-md-center"> 2026 &copy; <span class="text-bold text-primary">Bhart Public School Nawalgrah</span> Designed By <a class="border-bottom" href="https://equares.in/">Equares</a>, All Right Reserved.
+                        <div class="text-center text-md-center"> 2026 &copy; <span class="text-bold text-primary">Bhart Public School Nawalgrah</span> Designed By <a class="border-bottom" href="">BPS</a>, All Right Reserved.
 
                 </div>
     </div>
